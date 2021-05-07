@@ -6,7 +6,11 @@ for x in range (5,1001,5):
     print(x)
 
 for x in range(1,100,1):
-    if x%5==0:
+    if x%10==0:
+        print("coding dojo")
+    elif 10%5==0:
+        print("coding")
+    else:
         print(x)
 
 
