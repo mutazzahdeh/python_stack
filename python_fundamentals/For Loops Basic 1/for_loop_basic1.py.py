@@ -4,6 +4,7 @@ for x in range(0,151,1):
 
 for x in range (5,1001,5):
     print(x)
+
 for x in range(1,100,1):
     if x%10==0:
         print("coding dojo")
@@ -11,8 +12,6 @@ for x in range(1,100,1):
         print("coding")
     else:
         print(x)
-
-
 
 
 
