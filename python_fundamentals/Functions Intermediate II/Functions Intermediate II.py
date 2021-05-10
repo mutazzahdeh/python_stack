@@ -21,7 +21,7 @@ print(z)
 # 2 Iterate Through a List of Dictionaries
 
 def iterateDictionary(arr):
-    for i in range(0,len(arr)):
+    for i in range (len(arr)):
         print(f"first name - {arr[i]['first_name']}, Last-name- {arr[i]['last_name']}")
 
 students = [
@@ -39,12 +39,11 @@ iterateDictionary2('first_name', students)
 # 4 Iterate Through a Dictionary with List Values
 def printInfo(some_dict):
     y=7
-    r=list(some_dict.keys())
-    print(r)
-    for i in range (0,len(r)):
-        print(f"{y} {r[i]}")
-        for j in range (0,len(some_dict[r[i]])):
-            print(some_dict[r[i]][j])
+    
+    for key, Value in some_dict
+        print(f"{y} {key}")
+         print(Value)
+        
         y+=1
     
 
@@ -52,4 +51,4 @@ dojo = {
    'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
    'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
 }
-printInfo(dojo)
+printInfo(dojo)6
