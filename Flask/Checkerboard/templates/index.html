@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solving Checkerboard Assignment">
+    <title>Checkerboard Assignment</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styyle.css')}}">
+</head>
+
+<body>
+    
+    {%for i in range(0,y,1):%} 
+         {%for j in range(0,x,1):%} 
+            {% set color=color2 %} 
+            {%if (j+i)%2==0:%} 
+                {% set color=color1 %}
+            {%endif%} 
+            <div class="box" style="background-color:{{color}}"></div>
+    
+            {%endfor%}
+    <br> 
+    {%endfor%}
+
+
+</body>
+
+</html>
