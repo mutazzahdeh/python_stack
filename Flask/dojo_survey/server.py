@@ -2,7 +2,9 @@ from flask import Flask, render_template, request, redirect , session
 
 app = Flask(__name__)
 # our index route will handle rendering our form
-@app.route('/' , methods = ['POST'])
+@app.route('/')
+@app.route('/',methods = ['POST'] )
+
 def index():
     return render_template("index.html")
 
