@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Index Page</h1>
+<h3>Create a User</h3>
+    <form action='/result' method='post'>
+    Name: <input type='text' name='name'>
+    <br><br>
+    <label for="Location">Dojo Location :</label>
+    <select id="location" name="location">
+    <option value="Palestine">Palestine</option>
+    <option value="Jordan">Jordan</option>
+    <option value="San jose">San jose</option>
+    
+    </select>
+    <br><br>
+    <label for="lang">Dojo Language :</label>
+    <select id="lang" name="lang">
+    <option value="Java">Java</option>
+    <option value="Python">Python</option>
+    <option value="C++">C++</option>
+    
+    </select>
+    <br>
+    Comment (optional) : <br>
+    <input type="text" name="text"><br><br>
+    <input type='submit' value='create user'>
+</form>
+
+</body>
+</html>
