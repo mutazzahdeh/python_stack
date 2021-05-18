@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse,redirect
-import json
+from django.http import JsonResponse
 def root(request):
     return redirect ("/blogs")
 def index(request):
@@ -17,9 +17,10 @@ def destroy(request,number):
 def destroy(request):
     return redirect ("/blogs")
 def act(request):
-    d={
-        "titel":"My first Blog",
-        "content":"sdafsfsdfsdf"}
-    return JsonResponse(d)
+   
+    return JsonResponse(   {
+        "titel":"My first Blog ",
+        
+        "contentt":"sdafsfsdfsdf "})
 
 # Create your views here.
