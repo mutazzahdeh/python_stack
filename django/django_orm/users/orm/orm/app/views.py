@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, HttpResponse
 
 def index(request):
-    return HttpResponse('kol 5ara')
+    return HttpResponse('')
 
 
 # Create your views here.
