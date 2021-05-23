@@ -1,0 +1,13 @@
+pip list [options]
+Description
+List installed packages, including editables.
+
+Packages are listed in a case-insensitive sorted order
+
+
+deactivate (This will deactivate your virtual environment)
+
+call  and bath for activate enviroment
+pip install Django==2.2.4 (What information do you see returned in terminal after this command?)
+
+pip freeze (What's the difference between freeze and list?)

@@ -1,0 +1,247 @@
+Microsoft Windows [Version 10.0.19041.985]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\myrepositories\python_stack\django\django_orm>call C:\myrepositories\myenviroment\djangoPy3Env\Scripts\activate
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm>cd dojo_ninja_shell
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\dojo_ninja_shell>python manage.py makemigrations
+Migrations for 'dojo_ninja':
+  dojo_ninja\migrations\0001_initial.py
+    - Create model dojos
+    - Create model ninjas
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\dojo_ninja_shell>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, dojo_ninja, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying dojo_ninja.0001_initial... OK
+  Applying sessions.0001_initial... OK
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\dojo_ninja_shell>python manage.py shell
+Python 3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from dojo_ninja.models import *
+>>> dojos.object.create(name='mutaz',city='hebron',state='hebron')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: type object 'dojos' has no attribute 'object'
+>>> dojos.objects.create(name='mutaz',city='hebron',state='hebron')
+<dojos: dojos object (1)>
+>>> dojos.objects.all().values()
+<QuerySet [{'id': 1, 'name': 'mutaz', 'city': 'hebron', 'state': 'hebron'}]>
+>>> dojos.objects.create(name='haitam',city='ramallh',state='rammalah')
+<dojos: dojos object (2)>
+>>> dojos.objects.create(name='ahmad',city='ramadgllh',state='ramdsfmalah')
+<dojos: dojos object (3)>
+>>> a=dojos.objects.get(id=1)
+>>> a.delete()
+(1, {'dojo_ninja.ninjas': 0, 'dojo_ninja.dojos': 1})
+>>> a=dojos.objects.get(id=2)
+>>> a.delete()
+(1, {'dojo_ninja.ninjas': 0, 'dojo_ninja.dojos': 1})
+>>> a=dojos.objects.get(id=3)
+>>> a.delete()
+(1, {'dojo_ninja.ninjas': 0, 'dojo_ninja.dojos': 1})
+>>> dojos.objects.all().values()
+<QuerySet []>
+>>> dojos.objects.create(name='mutaz',city='hebron',state='hebron')
+<dojos: dojos object (4)>
+>>> dojos.objects.create(name='haitam',city='ramallh',state='rammalah')
+<dojos: dojos object (5)>
+>>> dojos.objects.create(name='ahmad',city='ramadgllh',state='ramdsfmalah')
+<dojos: dojos object (6)>
+>>> c=dojos.objects.get(id=4)
+>>> ninjas.objects.create(first_name='a1',last_name='b1',dojo=c)
+<ninjas: ninjas object (1)>
+>>> ninjas.dojo.name
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'ForwardManyToOneDescriptor' object has no attribute 'name'
+>>> ninjas.objects.get(id=1)
+<ninjas: ninjas object (1)>
+>>> a=ninjas.objects.get(id=1)
+>>> a.dojo.name
+'mutaz'
+>>> ninjas.objects.create(first_name='a2',last_name='b2',dojo=c)
+<ninjas: ninjas object (2)>
+>>> ninjas.objects.create(first_name='a3',last_name='b3',dojo=c)
+<ninjas: ninjas object (3)>
+>>> c=dojos.objects.get(id=5)
+>>> ninjas.objects.create(first_name='c1',last_name='d1',dojo=c)
+<ninjas: ninjas object (4)>
+>>> ninjas.objects.create(first_name='c2',last_name='d2',dojo=c)
+<ninjas: ninjas object (5)>
+>>> ninjas.objects.create(first_name='c3',last_name='d3',dojo=c)
+<ninjas: ninjas object (6)>
+>>> c=dojos.objects.get(id=6)
+>>> ninjas.objects.create(first_name='e1',last_name='f1',dojo=c)
+<ninjas: ninjas object (7)>
+>>> ninjas.objects.create(first_name='e2',last_name='f2',dojo=c)
+<ninjas: ninjas object (8)>
+>>> ninjas.objects.create(first_name='e3',last_name='f3',dojo=c)
+<ninjas: ninjas object (9)>
+>>> a = ninjas.objects.filter(dojo="mutaz")
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\sql\query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\sql\query.py", line 1315, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\sql\query.py", line 1251, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\sql\query.py", line 1116, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\fields\related_lookups.py", line 115, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\fields\__init__.py", line 966, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: 'mutaz'
+>>> a = ninjas.objects.filter(dojo.name="mutaz")
+  File "<console>", line 1
+    a = ninjas.objects.filter(dojo.name="mutaz")
+                              ^
+SyntaxError: expression cannot contain assignment, perhaps you meant "=="?
+>>> a = ninjas.objects.filter(dojo=dojos.objects.get(id=4))
+>>> a.obgects.all().values()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'QuerySet' object has no attribute 'obgects'
+>>> a.objects.all()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'QuerySet' object has no attribute 'objects'
+>>> a = ninjas.objects.filter(dojo=dojos.objects.get(id=4))
+>>> a
+<QuerySet [<ninjas: ninjas object (1)>, <ninjas: ninjas object (2)>, <ninjas: ninjas object (3)>]>
+>>> a.objects.all().values()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'QuerySet' object has no attribute 'objects'
+>>> a.all().values()
+<QuerySet [{'id': 1, 'first_name': 'a1', 'last_name': 'b1', 'dojo_id': 4}, {'id': 2, 'first_name': 'a2', 'last_name': 'b2', 'dojo_id': 4}, {'id': 3, 'first_name': 'a3', 'last_name': 'b3', 'dojo_id': 4}]>
+>>> a = ninjas.objects.filter(dojo=dojos.objects.get(id=5))
+>>> a.all().values()
+<QuerySet [{'id': 4, 'first_name': 'c1', 'last_name': 'd1', 'dojo_id': 5}, {'id': 5, 'first_name': 'c2', 'last_name': 'd2', 'dojo_id': 5}, {'id': 6, 'first_name': 'c3', 'last_name': 'd3', 'dojo_id': 5}]>
+>>> exit
+Use exit() or Ctrl-Z plus Return to exit
+>>>
+KeyboardInterrupt
+>>>
+>>> shell exit
+  File "<console>", line 1
+    shell exit
+          ^
+SyntaxError: invalid syntax
+>>> exit()
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\dojo_ninja_shell>python manage.py makemigrations
+You are trying to add a non-nullable field 'desc' to dojos without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+Select an option: 1
+Please enter the default value now, as valid Python
+The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now
+Type 'exit' to exit this prompt
+>>> exit()
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\dojo_ninja_shell>python manage.py makemigrations
+You are trying to add a non-nullable field 'desc' to dojos without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+Select an option: 1)
+Please select a valid option: 1
+Please enter the default value now, as valid Python
+The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now
+Type 'exit' to exit this prompt
+>>> null
+Invalid input: name 'null' is not defined
+>>> NUll
+Invalid input: name 'NUll' is not defined
+>>> aa
+Invalid input: name 'aa' is not defined
+>>> 'sdf'
+Migrations for 'dojo_ninja':
+  dojo_ninja\migrations\0002_dojos_desc.py
+    - Add field desc to dojos
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\dojo_ninja_shell>python manage.py makemigrations
+No changes detected
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\dojo_ninja_shell>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, dojo_ninja, sessions
+Running migrations:
+  Applying dojo_ninja.0002_dojos_desc... OK
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\dojo_ninja_shell>cd dojo_ninja_shell
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\dojo_ninja_shell\dojo_ninja_shellpython manage.py shell
+C:\Users\Motaz Zahdeh\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\python.exe: can't open file 'C:\myrepositories\python_stack\django\django_orm\dojo_ninja_shell\dojo_ninja_shell\manage.py': [Errno 2] No such file or directory
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\dojo_ninja_shell\dojo_ninja_shellpython manage.py shell
+C:\Users\Motaz Zahdeh\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\python.exe: can't open file 'C:\myrepositories\python_stack\django\django_orm\dojo_ninja_shell\dojo_ninja_shell\manage.py': [Errno 2] No such file or directory
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\dojo_ninja_shell\dojo_ninja_shellpython manage.py shell
+C:\Users\Motaz Zahdeh\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\python.exe: can't open file 'C:\myrepositories\python_stack\django\django_orm\dojo_ninja_shell\dojo_ninja_shell\manage.py': [Errno 2] No such file or directory
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\dojo_ninja_shell\dojo_ninja_shell>cd..
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\dojo_ninja_shell>python manage.py shell
+Python 3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from dojo_ninja import *
+>>> dojo.objects.create(name='hosam',city=
+... dojo.objects.create(name='hosam',city='hebron',state='hebron',desc='any')
+...
+... zxfldsjfl
+  File "<console>", line 4
+    zxfldsjfl
+    ^
+SyntaxError: invalid syntax
+>>> dojo.objects.create(name='hosam',city='hebron',state='hebron',desc='any')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'dojo' is not defined
+>>> dojos.objects.create(name='hosam',city='hebron',state='hebron',desc='any')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'dojos' is not defined
+>>> dojos.objects.create(name='hosam',city='hebron',state='hebron',desc='any')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'dojos' is not defined
+>>> from dojo_ninja.models import *
+>>> dojos.objects.create(name='hosam',city='hebron',state='hebron',desc='any')
+<dojos: dojos object (7)>
+>>>
+
+
