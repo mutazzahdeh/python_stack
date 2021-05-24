@@ -1,0 +1,958 @@
+Microsoft Windows [Version 10.0.19041.985]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\myrepositories\python_stack\django\django_orm>call C:\myrepositories\myenviroment\djangoPy3Env\Scripts\activate
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm>django-admin startproject books_authors_shell
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm>cd books_authors_shell
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\books_authors_shell>python manage.py startapp book_authors_shell
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\books_authors_shell>code .
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\books_authors_shell>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+May 24, 2021 - 18:52:58
+Django version 2.2.4, using settings 'books_authors_shell.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[24/May/2021 18:53:06] "GET / HTTP/1.1" 200 17
+C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 1, in <module>
+    class users(models.Model):
+NameError: name 'models' is not defined
+C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+May 24, 2021 - 18:54:40
+Django version 2.2.4, using settings 'books_authors_shell.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 17 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+May 24, 2021 - 18:54:43
+Django version 2.2.4, using settings 'books_authors_shell.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 13, in <module>
+    class car(models.Model):
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 16, in car
+    clints = models.ManyToManyField(users,related_name="cars")
+NameError: name 'users' is not defined
+C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 13, in <module>
+    class auth(models.Model):
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 16, in auth
+    clints = models.ManyToManyField(users,related_name="cars")
+NameError: name 'users' is not defined
+C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 13, in <module>
+    class authors(models.Model):
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 16, in authors
+    clints = models.ManyToManyField(users,related_name="cars")
+NameError: name 'users' is not defined
+C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 13, in <module>
+    class authors(models.Model):
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 16, in authors
+    clints = models.ManyToManyField(users,related_name="cars")
+NameError: name 'users' is not defined
+C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 13, in <module>
+    class authors(models.Model):
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 16, in authors
+    clints = models.ManyToManyField(users,related_name="cars")
+NameError: name 'users' is not defined
+C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 13, in <module>
+    class authors(models.Model):
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 16, in authors
+    clints = models.ManyToManyField(users,related_name="cars")
+NameError: name 'users' is not defined
+C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 13, in <module>
+    class authors(models.Model):
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 16, in authors
+    clints = models.ManyToManyField(users,related_name="cars")
+NameError: name 'users' is not defined
+C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 13, in <module>
+    class authors(models.Model):
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 16, in authors
+    clints = models.ManyToManyField(users,related_name="cars")
+NameError: name 'users' is not defined
+C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 13, in <module>
+    class authors(models.Model):
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 16, in authors
+    clints = models.ManyToManyField(users,related_name="cars")
+NameError: name 'users' is not defined
+C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 11, in <module>
+    class authors(models.Model):
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 14, in authors
+    clints = models.ManyToManyField(users,related_name="cars")
+NameError: name 'users' is not defined
+C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 11, in <module>
+    class authors(models.Model):
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 14, in authors
+    clints = models.ManyToManyField(users,related_name="cars")
+NameError: name 'users' is not defined
+C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 11, in <module>
+    class authors(models.Model):
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 14, in authors
+    clints = models.ManyToManyField(users,related_name="cars")
+NameError: name 'users' is not defined
+C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 11, in <module>
+    class authors(models.Model):
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 14, in authors
+    clints = models.ManyToManyField(users,related_name="cars")
+NameError: name 'users' is not defined
+C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 11, in <module>
+    class authors(models.Model):
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 15, in authors
+    clints = models.ManyToManyField(users,related_name="cars")
+NameError: name 'users' is not defined
+C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py changed, reloading.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 77, in raise_last_exception
+    raise _exception[1]
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 337, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\utils\autoreload.py", line 54, in wrapper
+    fn(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 11, in <module>
+    class authors(models.Model):
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 15, in authors
+    clints = models.ManyToManyField(users,related_name="cars")
+NameError: name 'users' is not defined
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\books_authors_shell>python manage.py makemigrations
+Traceback (most recent call last):
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\manage.py", line 21, in <module>
+    main()
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 357, in execute
+    django.setup()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 11, in <module>
+    class authors(models.Model):
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 15, in authors
+    clints = models.ManyToManyField(users,related_name="cars")
+NameError: name 'users' is not defined
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\books_authors_shell>python manage.py makemigrations
+Migrations for 'book_authors_shell':
+  book_authors_shell\migrations\0001_initial.py
+    - Create model authors
+    - Create model books
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\books_authors_shell>python manage.py makemigrations
+Traceback (most recent call last):
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\manage.py", line 21, in <module>
+    main()
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\core\management\__init__.py", line 357, in execute
+    django.setup()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1520.0_x64__qbz5n2kfra8p0\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 855, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 4, in <module>
+    class books(models.Model):
+  File "C:\myrepositories\python_stack\django\django_orm\books_authors_shell\book_authors_shell\models.py", line 7, in books
+    author=models.ManyToManyField(authors,related_name="book")
+NameError: name 'authors' is not defined
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\books_authors_shell>python manage.py makemigrations
+Migrations for 'book_authors_shell':
+  book_authors_shell\migrations\0002_books_author.py
+    - Add field author to books
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\books_authors_shell>python manage.py makemigrations
+Did you rename books.author to books.author_name (a ManyToManyField)? [y/N] y
+Migrations for 'book_authors_shell':
+  book_authors_shell\migrations\0003_auto_20210524_1903.py
+    - Rename field author on books to author_name
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\books_authors_shell>python manage.py makemigrations
+Did you rename books.author_name to books.author (a ManyToManyField)? [y/N] y
+Migrations for 'book_authors_shell':
+  book_authors_shell\migrations\0004_auto_20210524_1904.py
+    - Rename field author_name on books to author
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\books_authors_shell>python manage.py migrat
+Unknown command: 'migrat'. Did you mean migrate?
+Type 'manage.py help' for usage.
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\books_authors_shell>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, book_authors_shell, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying book_authors_shell.0001_initial... OK
+  Applying book_authors_shell.0002_books_author... OK
+  Applying book_authors_shell.0003_auto_20210524_1903... OK
+  Applying book_authors_shell.0004_auto_20210524_1904... OK
+  Applying sessions.0001_initial... OK
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\books_authors_shell>python manage.py shell
+Python 3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from book_authors_shell.models import *
+>>> csharp=books.objects.create(title="c sharp",desc="programming book1")
+>>> java=books.objects.create(title="java",desc="programming book2")
+>>> python=books.objects.create(title="python",desc="programming book3")
+>>> php=books.objects.create(title="php",desc="programming book4")
+>>> ruby=books.objects.create(title="ruby",desc="programming book5")
+>>> jane=authors.objects.create(first_name="jane",last_name="Austen")
+>>> emily=authors.objects.create(first_name="emily",last_name="dickinson")
+>>> fyodor=authors.objects.create(first_name="fyodor",last_name="dostoevsky")
+>>> william=authors.objects.create(first_name="william",last_name="shakespeare")
+>>> lau=authors.objects.create(first_name="lue",last_name="tzu")
+>>> exit()
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\books_authors_shell>python manage.py makemigrations
+You are trying to add a non-nullable field 'notes' to authors without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+Select an option: 1
+Please enter the default value now, as valid Python
+The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now
+Type 'exit' to exit this prompt
+>>> NULL
+Invalid input: name 'NULL' is not defined
+>>> Null
+Invalid input: name 'Null' is not defined
+>>> none
+Invalid input: name 'none' is not defined
+>>> NONE
+Invalid input: name 'NONE' is not defined
+>>> "null"
+Migrations for 'book_authors_shell':
+  book_authors_shell\migrations\0005_authors_notes.py
+    - Add field notes to authors
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\books_authors_shell>python manage.py migrat
+Unknown command: 'migrat'. Did you mean migrate?
+Type 'manage.py help' for usage.
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\books_authors_shell>python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, book_authors_shell, contenttypes, sessions
+Running migrations:
+  Applying book_authors_shell.0005_authors_notes... OK
+
+(djangoPy3Env) C:\myrepositories\python_stack\django\django_orm\books_authors_shell>python manage.py shell
+Python 3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from book_authors_shell.models import *
+>>> csharp.titel
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'csharp' is not defined
+>>> csharp.title
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'csharp' is not defined
+>>> csharp=books.objects.get(title="c sharp")
+>>> csharp.id
+1
+>>> csharp.title="C#"
+>>> c.save()
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'c' is not defined
+>>> csharp.save()
+>>> x=authors.objects.get(id=4)
+>>> x.first_name="bil"
+>>> x.save()
+>>> x=authors.objects.get(id=1)
+>>> x.book=books.objects.get(id=1)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\fields\related_descriptors.py", line 536, in __set__
+    raise TypeError(
+TypeError: Direct assignment to the reverse side of a many-to-many set is prohibited. Use book.set() instead.
+>>> x.book.add(books.objects.get(id=1))
+>>> x.book.add(books.objects.get(id=2))
+>>> x=authors.objects.get(id=2)
+>>> x.book.add(books.objects.get(id=1))
+>>> x.book.add(books.objects.get(id=2))
+>>> x.book.add(books.objects.get(id=3))
+>>> x.book.add(books.objects.get(id=4))
+>>> x=authors.objects.get(id=3)
+>>> x.book.add(books.objects.get(id=1))
+>>> x.book.add(books.objects.get(id=2))
+>>> x.book.add(books.objects.get(id=3))
+>>> x.book.add(books.objects.get(id=3))
+>>> x.book.add(books.objects.get(id=4))
+>>> x=authors.objects.get(id=4)
+>>> x.book.add(books.objects.all())
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\fields\related_descriptors.py", line 936, in add
+    self._add_items(
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\fields\related_descriptors.py", line 1061, in _add_items
+    vals = (self.through._default_manager.using(db)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\sql\query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\sql\query.py", line 1315, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\sql\query.py", line 1251, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\sql\query.py", line 1116, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\fields\related_lookups.py", line 59, in get_prep_lookup
+    self.rhs = [target_field.get_prep_value(v) for v in self.rhs]
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\fields\related_lookups.py", line 59, in <listcomp>
+    self.rhs = [target_field.get_prep_value(v) for v in self.rhs]
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\fields\__init__.py", line 966, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'QuerySet'
+>>> x.book.all()
+<QuerySet []>
+>>> x.book.add(books.objects.get(id=1))
+>>> x.book.add(books.objects.get(id=2))
+>>> x.book.add(books.objects.get(id=3))
+>>> x.book.add(books.objects.get(id=4))
+>>> x.book.add(books.objects.get(id=5))
+>>> x=books.objects.get(id=3)
+>>> x.author.all()
+<QuerySet [<authors: authors object (2)>, <authors: authors object (3)>, <authors: authors object (4)>]>
+>>> x.author.all().value
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'QuerySet' object has no attribute 'value'
+>>> x.author.all().values()
+<QuerySet [{'id': 2, 'first_name': 'emily', 'last_name': 'dickinson', 'notes': 'null', 'created_at': datetime.datetime(2021, 5, 24, 16, 18, 11, 959816, tzinfo=<UTC>), 'updated_at': datetime.datetime(2021, 5, 24, 16, 18, 11, 959816, tzinfo=<UTC>)}, {'id': 3, 'first_name': 'fyodor', 'last_name': 'dostoevsky', 'notes': 'null', 'created_at': datetime.datetime(2021, 5, 24, 16, 19, 7, 547844, tzinfo=<UTC>), 'updated_at': datetime.datetime(2021, 5, 24, 16, 19, 7, 547844, tzinfo=<UTC>)}, {'id': 4, 'first_name': 'bil', 'last_name': 'shakespeare', 'notes': 'null', 'created_at': datetime.datetime(2021, 5, 24, 16, 20, 25, 713250, tzinfo=<UTC>), 'updated_at': datetime.datetime(2021, 5, 24, 16, 36, 7, 474848, tzinfo=<UTC>)}]>
+>>> x.author.first_name
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+AttributeError: 'ManyRelatedManager' object has no attribute 'first_name'
+>>> for i in x
+  File "<console>", line 1
+    for i in x
+              ^
+SyntaxError: invalid syntax
+>>> for i in x:
+... print(i.author.first_name)
+  File "<console>", line 2
+    print(i.author.first_name)
+    ^
+IndentationError: expected an indented block
+>>> for i in x:
+...     print(i.author.first_name)
+... endfor
+  File "<console>", line 3
+    endfor
+    ^
+SyntaxError: invalid syntax
+>>> for i in x:
+...     print(i.author.first_name)
+...
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+TypeError: 'books' object is not iterable
+>>> for i in x.author:
+... print(i.first_name)
+  File "<console>", line 2
+    print(i.first_name)
+    ^
+IndentationError: expected an indented block
+>>> for i in x.author:
+...     print(i.first_name)
+...
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+TypeError: 'ManyRelatedManager' object is not iterable
+>>> x=books.objects.get(id=3)
+>>> y=x.author.get(id=1)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book_authors_shell.models.authors.DoesNotExist: authors matching query does not exist.
+>>> y=x.author.get(id=5)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\myrepositories\myenviroment\djangoPy3Env\lib\site-packages\django\db\models\query.py", line 406, in get
+    raise self.model.DoesNotExist(
+book_authors_shell.models.authors.DoesNotExist: authors matching query does not exist.
+>>> x=books.objects.get(id=3)
+>>> y=author.objects.get(id=2)
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'author' is not defined
+>>> y=authors.objects.get(id=2)
+>>> x.author.remove(y)
+>>>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display:flex; ">
+        <div>
+            <h1>Registration</h1>
+        <form action='/reg' method="POST">
+        
+            {% csrf_token %}
+            First Name:<input type="text" name="name">
+            <br><br>
+            Last Name:<input type="text" name="lname">
+            <br><br>
+            email:<input type="text" name="email">
+            <br><br>
+            Password:<input type="password" name="pass">
+            <br><br>
+           
+            Confirm PW:<input type="password" name="cpass">
+            <br><br>
+          
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <div style="margin-left: 50px;">
+        <h1>Login</h1>
+        <form action='/addn' method="POST">
+        
+            {% csrf_token %}
+            email:<input type="text" name="fname">
+            <br><br>
+            Password<input type="password" name="lname">
+            <br><br>
+            
+            <br><br>
+            <button type="submit">Login</button>
+         
+        </form>
+    </div>
+    </div>
+    
+</body>
+</html>
