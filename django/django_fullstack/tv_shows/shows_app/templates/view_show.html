@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{this_show.title}}</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>TV Show {{this_show.id}}</h1>
+        <a href="/shows">Go Back</a>
+    </div><br><br>
+    <h3>Title: {{this_show.title}}</h3>
+    <h3>Network: {{this_show.network}}</h3>
+    <h3>Release Date: {{this_show.release_date}}</h3>
+    <h3>Description: {{this_show.description}}</h3><br><br><br><br>
+    <h3>Last Updated: {{this_show.updated_at}}</h3>
+    <a href="/show/{{ this_show.id }}/edit">Edit</a> | <a href="/delete/{{ this_show.id }}">Delete</a>
+</body>
+
+</html>

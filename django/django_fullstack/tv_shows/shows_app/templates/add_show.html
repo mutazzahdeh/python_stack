@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a New Show</title>
+</head>
+
+<body>
+    <h1>Add a New Show</h1>
+    <form action="/add_show" method="POST">
+        {% csrf_token %}
+        <p>Title</p>
+        <input type="Text" name="title" required>
+        <p>network</p>
+        <input type="Text" name="network" required>
+        <p>Release Date </p>
+        <input type="date" name="date" required>
+        <p>Description </p>
+        <textarea name="description" rows="4" cols="50" required></textarea>
+        <input type="submit" value="Create">
+    </form>
+</body>
+
+</html>

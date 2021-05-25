@@ -12,4 +12,5 @@ class ninjas(models.Model):
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     dojo = models.ForeignKey(dojos, related_name="dojo", on_delete = models.CASCADE)
+    title = models.
     
