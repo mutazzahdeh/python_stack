@@ -44,6 +44,11 @@
         </form>
     </div>
     </div>
+    {%if request.session.bool%}
+    {% for key, values in errors.items %}
     
+    <p>{{key}} {{values}}</p>
+    {%endfor%}
+    {%endif%}
 </body>
 </html>
