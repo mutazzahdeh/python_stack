@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
     <title>Document</title>
 </head>
 
@@ -15,16 +17,20 @@
             <form action='/reg' method="POST">
 
                 {% csrf_token %}
-                First Name:<input type="text" name="name">
+                <label for="first_name">First name:</label>
+                <input type="text" name="first_name">
                 <br><br>
-                Last Name:<input type="text" name="lname">
+                <label for="last_name">Last name:</label>
+                <input type="text" name="last_name">
                 <br><br>
-                email:<input type="text" name="email">
+                <label for="email">Email:</label>
+                <input type="email" name="email">
                 <br><br>
-                Password:<input type="password" name="pass">
+                <label for="password">Password:</label>
+                <input type="password" name="password">
                 <br><br>
-
-                Confirm PW:<input type="password" name="cpass">
+                <label for="confpassword">Confirm PW:</label>
+                <input type="password" name="confpassword">
                 <br><br>
 
                 <button type="submit">Register</button>
@@ -32,12 +38,14 @@
         </div>
         <div style="margin-left: 50px;">
             <h1>Login</h1>
-            <form action='/addn' method="POST">
+            <form action='/loginre' method="POST">
 
                 {% csrf_token %}
-                email:<input type="text" name="fname">
+                <label for="email">Email:</label>
+                <input type="text" name="email">
                 <br><br>
-                Password<input type="password" name="lname">
+                <label for="password">Password:</label>
+                <input type="password" name="password">
                 <br><br>
 
                 <br><br>

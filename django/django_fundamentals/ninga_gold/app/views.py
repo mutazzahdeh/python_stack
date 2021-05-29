@@ -10,9 +10,15 @@ def reset(request):
     request.session['activities'] = []
     return render(request,'index.html')
 
-def home(request):
+def home(request, id):
+    """
+    Describe
+    id: the book id
+    par2:
+    return:: render the index.html page
+    """
     try:
-        request.session['gold']
+        request.session['gold'] # why?
     except KeyError:
         request.session['gold'] = 0
     try:

@@ -73,4 +73,7 @@ def login(request):
         
         
         
-    return render(request,"index.html")
+    return redirect("/login")
+
+def logina(requst):
+    return redirect("/login")
